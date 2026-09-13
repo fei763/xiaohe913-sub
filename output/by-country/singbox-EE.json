@@ -13,7 +13,7 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "estproxy4.lockdwn.com"
+          "Host": "94.183.170.135"
         }
       }
     },
@@ -27,22 +27,26 @@
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "217.60.182.79",
+      "server": "31.76.71.63",
       "server_port": 443,
       "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
       "tls": {
         "enabled": true,
         "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
