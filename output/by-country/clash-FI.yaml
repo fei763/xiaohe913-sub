@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 185.255.179.11
-  port: 9443
-  udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-se-02.hanvpn.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: se02-grpc-8e47a
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 02 - xiaohe
 rules:
 - MATCH,PROXIES
