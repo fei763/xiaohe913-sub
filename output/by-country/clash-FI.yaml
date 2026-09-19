@@ -12,6 +12,14 @@ proxies:
   cipher: aes-128-gcm
   password: o2rw2hICwu1blrr_gZAl2Q
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: fr.vpn.legendaah.xyz
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: finkafsb.finiki.lol
   port: 443
   udp: true
@@ -24,14 +32,6 @@ proxies:
     short-id: d110331f200987ae
   servername: finkafsb.finiki.lol
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: fr.vpn.legendaah.xyz
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 'off'
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
