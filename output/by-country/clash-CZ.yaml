@@ -4,26 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
-  server: 143.246.219.51
-  port: 8081
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 153.76.185.187
+  port: 3090
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 7b219b61-9cc6-49ca-bf2d-5d5ec7960256
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
