@@ -13,12 +13,12 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 140.174.184.5
+  server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
   server: 212.227.235.66
   port: 2053
@@ -32,18 +32,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 87.76.179.117
-  port: 7443
+  server: 140.174.184.5
+  port: 8388
   udp: true
-  type: vless
-  uuid: cb15d1b0-e48b-4c4c-b98a-fa1103aa3723
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: www.samsung.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 proxy-groups:
 - name: PROXIES
   type: select

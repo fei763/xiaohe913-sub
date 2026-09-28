@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "140.174.184.5",
+      "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",
@@ -40,25 +40,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "87.76.179.117",
-      "server_port": 7443,
-      "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
-        }
-      }
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "selector",
