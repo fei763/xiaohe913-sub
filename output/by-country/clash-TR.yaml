@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 93.190.9.35
+  server: 93.190.9.224
   port: 3090
   udp: true
   type: vless
-  uuid: eb95d26f-2200-4780-9986-cc4960c665f2
+  uuid: 564d8aeb-ef79-46ac-92bd-88b231f51c90
   network: grpc
   grpc-opts:
     grpc-service-name: vless
