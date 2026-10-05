@@ -5,26 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
-  server: 89.41.172.85
-  port: 22324
+  server: 91.201.65.122
+  port: 9070
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-cfb
+  password: bf7v334KKDV3YDhH
 - name: 🇮🇹 意大利 (Italy) 02 - xiaohe
-  server: 185.164.175.81
-  port: 19999
+  server: 199.232.78.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f5762c0-2fbb-4609-be8a-f3cf4f22fd38
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: italyji.global.ssl.fastly.net.
+- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
+  server: 57.131.48.45
+  port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  password: itzvpn@321
 proxy-groups:
 - name: PROXIES
   type: select
