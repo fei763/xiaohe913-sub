@@ -17,7 +17,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: aksai.org
+  server: 185.67.125.90
   port: 443
   udp: true
   type: vmess
