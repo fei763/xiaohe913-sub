@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "45.205.0.6",
+      "type": "vless",
+      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe",
+      "server": "31.129.22.141",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "pt-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇵🇹 葡萄牙 (Portugal) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
