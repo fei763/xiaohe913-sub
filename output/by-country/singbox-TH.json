@@ -22,7 +22,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-      "server": "154.21.203.106",
+      "server": "154.64.251.118",
       "server_port": 21033,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",

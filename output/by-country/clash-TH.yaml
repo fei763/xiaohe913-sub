@@ -20,7 +20,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 154.21.203.106
+  server: 154.64.251.118
   port: 21033
   udp: true
   type: vless
