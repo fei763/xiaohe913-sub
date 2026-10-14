@@ -29,7 +29,7 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 31.59.210.32
   port: 443
@@ -41,7 +41,7 @@ proxies:
     public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
     short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -69,8 +69,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
