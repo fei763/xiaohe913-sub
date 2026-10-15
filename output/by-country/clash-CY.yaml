@@ -14,7 +14,7 @@ proxies:
   tls: true
   servername: co-pl.speedtec.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
