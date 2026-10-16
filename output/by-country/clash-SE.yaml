@@ -29,20 +29,20 @@ proxies:
   servername: swe.wizard.select
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 94.143.231.146
-  port: 443
+  server: se1.h1cloud.net
+  port: 26226
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
+  reality-opts:
+    public-key: zsSr4H-YgykAOYdIYFaAnFQtIguRhP825FodeKSoxjA
+    short-id: 2ddf3f1151012c98
+  servername: www.dn.se
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 69effd3120f4
 proxy-groups:
 - name: PROXIES
   type: select
