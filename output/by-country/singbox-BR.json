@@ -5,27 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe",
-      "server": "nl5.hap-plus.ru",
-      "server_port": 8443,
-      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+      "server": "8dwou5alze.chhbuv.cn",
+      "server_port": 34534,
+      "uuid": "d9109567-3fc3-4e08-9cac-4d9162ef5a9f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl5.hap-plus.ru",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.tue.nl",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/events",
-        "headers": {
-          "Host": "nl5.hap-plus.ru"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AavBPGGJUpyGWiriV_Fbx-SrAvR5t-9mHeQY8uIltyo",
+          "short_id": "41b9cb10b696"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
