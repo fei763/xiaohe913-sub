@@ -16,15 +16,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: hy-se.bypassme.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  sni: hy-se.bypassme.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: edge-lab-b.10media.top
+  server: 45.12.63.219
   port: 443
   udp: true
   type: vless
@@ -32,9 +24,25 @@ proxies:
   tls: true
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: se1.h1cloud.net
+  port: 26128
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: df50147201bf
 proxy-groups:
 - name: PROXIES
   type: select
