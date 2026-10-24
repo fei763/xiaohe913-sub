@@ -11,11 +11,20 @@
       "uuid": "44dfa3a7-f648-4587-819b-e653c0823f28"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "server": "92.118.150.146",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "vless",
