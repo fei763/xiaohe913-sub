@@ -15,7 +15,7 @@
         "server_name": "us5.pc-peervax.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
