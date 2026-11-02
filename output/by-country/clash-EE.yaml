@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 188.225.62.62
-  port: 7443
+  server: 79.182.39.232
+  port: 25895
   udp: true
   type: vless
-  uuid: 6116f0f3-15eb-4217-b38e-16514dc00ba1
-  flow: xtls-rprx-vision
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
-  servername: ru2.datacore-tech.ru
-  skip-cert-verify: false
-  client-fingerprint: safari
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
