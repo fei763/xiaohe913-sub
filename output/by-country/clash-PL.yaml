@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -25,45 +17,14 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: new-p33.vurneq.ir
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 70.34.252.255
   port: 443
   udp: true
-  type: vless
-  uuid: de23f71d-a638-43d5-b0f7-d9f616077c9a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XzPy2vjzBXPB5eC1cHEn37MRCCq47zYE-apfA1XUbhY
-    short-id: 51852ca8c115946e
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: edge
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 84.23.52.120
-  port: 28447
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 84.23.52.120
-  port: 28448
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /lovelive
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
