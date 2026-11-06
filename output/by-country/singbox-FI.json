@@ -44,12 +44,36 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "199.232.8.223",
+      "server_port": 443,
+      "password": "TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ",
+      "tls": {
+        "enabled": true,
+        "server_name": "community.fastly.steamstatic.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Hokkaneno-acc2-pirima.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ]
     },
     {
@@ -57,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-        "🇫🇮 芬兰 (Finland) 02 - xiaohe"
+        "🇫🇮 芬兰 (Finland) 02 - xiaohe",
+        "🇫🇮 芬兰 (Finland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
