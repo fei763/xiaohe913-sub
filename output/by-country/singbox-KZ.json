@@ -5,25 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.70.228",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "95.143.188.113",
       "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "uuid": "c47159bb-2c15-440d-b239-8594d7e7efbb",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
+        "server_name": "tz5gtjwlki.j.cloudfront.hls.hlsnode.net",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "u.srilankangrill.online"
-        }
+        "type": "grpc",
+        "service_name": "sync.v1"
       }
     },
     {
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
