@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: fi1.obxodvpn.us
+  server: 177.202.75.56
   port: 443
   udp: true
   type: hysteria2
@@ -24,37 +24,29 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 5.129.249.155
+  server: 129.101.102.168
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: assets-59.topp-con.xyz
-  client-fingerprint: chrome
+    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
+    short-id: c59bb8af70d9db1e
+  servername: fi3-edge.gacvpn.site
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 172.66.0.1
-  port: 2053
+  server: 193.188.21.253
+  port: 14430
   udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   network: ws
   ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +56,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +65,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
