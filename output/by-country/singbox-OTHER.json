@@ -6,52 +6,49 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.17.145.43",
+      "server": "172.64.155.209",
       "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
       "tls": {
         "enabled": true,
-        "server_name": "estuary.gerqix.online",
+        "server_name": "sinavm2.soft10.ir",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/api/de7/stream",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
         "headers": {
-          "Host": "estuary.gerqix.online"
+          "Host": "sinavm2.soft10.ir"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.17.70.206",
-      "server_port": 8443,
-      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
+      "server": "172.64.155.209",
+      "server_port": 443,
+      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
       "tls": {
         "enabled": true,
-        "server_name": "free.sahanwickramasinghe.com",
+        "server_name": "sinavm3.soft10.ir",
         "insecure": false,
         "alpn": [
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
         "headers": {
-          "Host": "free.sahanwickramasinghe.com"
+          "Host": "sinavm3.soft10.ir"
         }
       }
     },
